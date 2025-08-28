@@ -1,3 +1,60 @@
+# Team Role Assignment System
+
+This application is a web-based system for assigning roles to team members based on their skills, experience, and personality traits. It uses AI-powered assignment for optimal team composition.
+
+## Features
+- Session-based team management
+- Applicant registration with skills and traits
+- AI-driven role assignment
+- Admin dashboard for session and team management
+- Multi-language support
+
+## Setup
+
+### Prerequisites
+- Node.js (v18 or later)
+- npm
+- Supabase account (for database)
+
+## Usage
+
+### As a User
+1. **Join a Session**:
+   - Visit the home page
+   - Enter the 6-character session code provided by the admin
+   - Click "Join Meeting"
+
+2. **Join a Team**:
+   - Once in the session, you'll see available teams
+   - Select a team and click "Join"
+   - Fill in your details:
+     - Name
+     - Occupation
+     - Years/Months of experience
+     - Up to 5 skills (each <=30 characters)
+     - Up to 5 personality traits (each <=40 characters)
+   - Submit to apply
+
+3. **View Results**:
+   - When the team is full and assignment is complete
+   - Go to Results page
+   - View assigned roles, justifications, and scores
+
+### As an Admin
+1. **Login**:
+   - From the header or /admin page
+   - Enter the admin password set in .env
+
+2. **Manage Sessions**:
+   - Create new sessions
+   - Generate session codes
+   - Monitor applicants
+
+3. **Manage Teams**:
+   - Create teams within sessions
+   - Trigger role assignments
+   - View detailed results
+
 **隐私政策**
 
 本项目不收集、存储或共享任何个人数据。
